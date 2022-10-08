@@ -1,0 +1,10 @@
+executable = run.sh
+universe   = vanilla
+
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(Process)
+getenv = True
+output = job_$(Process).out
+error = job_$(Process).err
+queue 42

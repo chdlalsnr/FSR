@@ -1,0 +1,8 @@
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3016] Unable to open /xrd/store/mc/RunIIFall17NanoAODv7/GluGluHToTauTau_M125_13TeV_powheg_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/270000; is a directory
+
+Traceback (most recent call last):
+  File "generateCSVfile_2017.py", line 431, in <module>
+    main(sys.argv[1])
+  File "generateCSVfile_2017.py", line 38, in main
+    t = f.Get("Events")
+ReferenceError: attempt to access a null-pointer

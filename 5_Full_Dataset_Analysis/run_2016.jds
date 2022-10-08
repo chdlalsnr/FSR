@@ -1,0 +1,11 @@
+executable = run_2016.sh
+universe   = vanilla
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(DATASET)
+getenv = True
+output = job_2016_$(DATASET).out
+error = job_2016_$(DATASET).err
+
+queue DATASET in (signal,tt_2l2nu1,tt_2l2nu2,tt_2l2nu3,tt_2l2nu4,tt_2l2nu5,tt_2l2nu6,tt_2l2nu7,tt_2l2nu8,tt_2l2nu9,tt_2l2nu10,tt_2l2nu11,tt_2l2nu12,tt_2l2nu13,tt_2l2nu14,tt_2l2nu15,tt_2l2nu16,tt_2l2nu17,tt_2l2nu18,tt_2l2nu19,tt_2l2nu20,tt_semi1,tt_semi2,tt_semi3,tt_semi4,tt_semi5,tt_semi6,tt_semi7,tt_semi8,tt_semi9,tt_semi10,tt_semi11,tt_semi12,tt_semi13,tt_semi14,tt_semi15,tt_semi16,tt_semi17,tt_semi18,tt_semi19,tt_semi20,tt_semi21,tt_semi22,tt_semi23,tt_semi24,tt_semi25,tt_semi26,tt_semi27,tt_semi28,tt_semi29,tt_semi30,tt_semi31,tt_had1,tt_had2,tt_had3,tt_had4,tt_had5,tt_had6,tt_had7,tt_had8,tt_had9,tt_had10,tt_had11,tt_had12,tt_had13,tt_had14,tt_had15,tt_had16,tt_had17,tt_had18,tt_had19,tt_had20,tt_had21,tt_had22,dy_m501,dy_m502,dy_m503,dy_m504,dy_m505,dy_m506,dy_m507,dy_m508,dy_m509,dy_m5010,dy_m5011,dy_m5012,dy_m5013,dy_m5014,dy_m5015,dy_m5016,dy_m5017,dy_m5018,dy_0j1,dy_0j2,dy_0j3,dy_0j4,dy_0j5,dy_0j6,dy_0j7,dy_0j8,dy_1j1,dy_1j2,dy_1j3,dy_1j4,dy_1j5,dy_1j6,dy_1j7,dy_1j8,dy_1j9,dy_2j1,dy_2j2,dy_2j3,dy_2j4,dy_2j5,dy_2j6,dy_2j7,dy_2j8,wj_jet1,wj_jet2,wj_jet3,wj_jet4,wj_jet5,wj_jet6,wj_jet7,wj_jet8,wj_jet9,wj_jet10,wj_jet11,wj_1j1,wj_1j2,wj_1j3,wj_1j4,wj_1j5,wj_1j6,wj_2j1,wj_2j2,wj_2j3,wj_2j4,wj_2j5,wj_3j1,wj_3j2,wj_3j3,wj_3j4,wj_4j1,wj_4j2,st_schannel_incl1,st_tW_anti1,st_tW_anti2,st_tW_anti3,st_tW_top1,st_tW_top2,st_tchannel_anti1,st_tchannel_anti2,st_tchannel_anti3,st_tchannel_anti4,st_tchannel_anti5,st_tchannel_anti6,st_tchannel_anti7,st_tchannel_top1,st_tchannel_top2,st_tchannel_top3,st_tchannel_top4,st_tchannel_top5,st_tchannel_top6,st_tchannel_top7,st_tchannel_top8)
