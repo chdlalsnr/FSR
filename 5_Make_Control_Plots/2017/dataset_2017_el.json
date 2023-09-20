@@ -1,0 +1,24 @@
+{
+
+	"run2017B_el1":{
+		"dataset":"/xrootd/store/data/Run2017B/SingleElectron/NANOAOD/Nano25Oct2019-v1/*/*"
+	},
+
+	"run2017C_el1":{
+		"dataset":"/xrootd/store/data/Run2017C/SingleElectron/NANOAOD/Nano25Oct2019-v1/*/*"
+	},
+
+	"run2017D_el1":{
+		"dataset":"/xrootd/store/data/Run2017D/SingleElectron/NANOAOD/Nano25Oct2019-v1/*/*"
+	},
+
+	"run2017E_el1":{
+		"dataset":"/xrootd/store/data/Run2017E/SingleElectron/NANOAOD/Nano25Oct2019-v1/*/*"
+	},
+
+	"run2017F_el1":{
+		"dataset":"/xrootd/store/data/Run2017F/SingleElectron/NANOAOD/Nano25Oct2019-v1/*/*"
+	}
+
+}
+

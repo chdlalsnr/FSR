@@ -1,0 +1,11 @@
+executable = run_2018.sh
+universe   = vanilla
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(DATASET)
+getenv = True
+output = job_2018_$(DATASET).out
+error = job_2018_$(DATASET).err
+
+queue DATASET in (signal,tt_2l2nu1,tt_2l2nu2,tt_2l2nu3,tt_2l2nu4,tt_2l2nu5,tt_2l2nu6,tt_2l2nu7,tt_2l2nu8,tt_semi1,tt_semi2,tt_semi3,tt_semi4,tt_semi5,tt_semi6,tt_semi7,tt_semi8,tt_had1,tt_had2,tt_had3,tt_had4,tt_had5,tt_had6,tt_had7,tt_had8,dy_m101,dy_m102,dy_m103,dy_m104,dy_m105,dy_m501,dy_m502,dy_m503,dy_0j1,dy_0j2,dy_0j3,dy_0j4,dy_0j5,dy_0j6,dy_1j1,dy_1j2,dy_1j3,dy_1j4,dy_1j5,dy_1j6,dy_2j1,dy_2j2,dy_2j3,dy_2j4,dy_2j5,dy_2j6,wj_jets1,wj_jets2,wj_jets3,wj_jets4,wj_jets5,wj_jets6,wj_jets7,wj_jets8,wj_jets9,wj_jets10,wj_1j1,wj_1j2,wj_2j1,wj_2j2,wj_2j3,wj_2j4,wj_2j5,wj_2j6,wj_2j7,wj_3j1,wj_3j2,wj_3j3,wj_3j4,wj_3j5,wj_3j6,wj_3j7,wj_3j8,wj_3j9,wj_4j1,wj_4j2,wj_4j3,wj_4j4,wj_4j5,wj_4j6,st_schannel_incl,st_tW_anti1,st_tW_anti2,st_tW_anti3,st_tW_top1,st_tW_top2,st_tW_ll,st_tchannel_anti1,st_tchannel_anti2,st_tchannel_anti3,st_tchannel_anti4,st_tchannel_top1,st_tchannel_top2,sh_bb1,sh_bb2,sh_gg,sh_zz,sh_2l2nu,sh_mumu,sh_lnuqq1,sh_lnuqq2,sh_lnuqq3,sh_lnuqq4,sh_lnuqq5,sh_lnuqq6,sh_lnuqq7,sh_tautau1,sh_tautau2,sh_tautau3)

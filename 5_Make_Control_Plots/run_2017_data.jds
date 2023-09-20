@@ -1,0 +1,60 @@
+executable = run_2017_data.sh
+universe   = vanilla
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(DATASET)
+getenv = True
+output = job_2017_data_$(DATASET).out
+error = job_2017_data_$(DATASET).err
+
+queue DATASET in (
+
+run2017B_el1aa,  run2017B_mu1aw,  run2017C_el1bg,  run2017C_mu1as,  run2017D_mu1ab,  run2017E_el1aw,  run2017E_mu1at,  run2017F_el1an,  run2017F_mm1an,  run2017F_mu1ba,
+run2017B_el1ab,  run2017B_mu1ax,  run2017C_el1bh,  run2017C_mu1at,  run2017D_mu1ac,  run2017E_el1ax,  run2017E_mu1au,  run2017F_el1ao,  run2017F_mm1ao,  run2017F_mu1bb,
+run2017B_el1ac,  run2017B_mu1ay,  run2017C_el1bi,  run2017C_mu1au,  run2017D_mu1ad,  run2017E_el1ay,  run2017E_mu1av,  run2017F_el1ap,  run2017F_mm1ap,  run2017F_mu1bc,
+run2017B_el1ad,  run2017B_mu1az,  run2017C_el1bj,  run2017C_mu1av,  run2017D_mu1ae,  run2017E_el1az,  run2017E_mu1aw,  run2017F_el1aq,  run2017F_mm1aq,  run2017F_mu1bd,
+run2017B_el1ae,  run2017B_mu1ba,  run2017C_el1bk,  run2017C_mu1aw,  run2017D_mu1af,  run2017E_el1bd,  run2017E_mu1ax,  run2017F_el1ar,  run2017F_mm1ar,  run2017F_mu1be,
+run2017B_el1af,  run2017B_mu1bb,  run2017C_el1bl,  run2017C_mu1ax,  run2017D_mu1ag,  run2017E_el1be,  run2017E_mu1ay,  run2017F_el1as,  run2017F_mm1as,  run2017F_mu1bf,
+run2017B_el1ag,  run2017B_mu1bc,  run2017C_el1bm,  run2017C_mu1ay,  run2017D_mu1ah,  run2017E_mm1aa,  run2017E_mu1az,  run2017F_el1at,  run2017F_mm1at,  run2017F_mu1bg,
+run2017B_el1ah,  run2017B_mu1bd,  run2017C_el1bn,  run2017C_mu1az,  run2017D_mu1ai,  run2017E_mm1ab,  run2017E_mu1ba,  run2017F_el1au,  run2017F_mm1au,  run2017F_mu1bh,
+run2017B_el1ai,  run2017B_mu1be,  run2017C_el1bo,  run2017C_mu1ba,  run2017D_mu1aj,  run2017E_mm1ac,  run2017E_mu1bb,  run2017F_el1av,  run2017F_mm1av,  run2017F_mu1bi,
+run2017B_el1aj,  run2017B_mu1bf,  run2017C_el1bt,  run2017C_mu1bb,  run2017D_mu1ak,  run2017E_mm1ad,  run2017E_mu1bc,  run2017F_el1aw,  run2017F_mm1aw,  run2017F_mu1bj,
+run2017B_el1ak,  run2017B_mu1bg,  run2017C_el1bu,  run2017C_mu1bc,  run2017D_mu1al,  run2017E_mm1ae,  run2017E_mu1bd,  run2017F_el1ax,  run2017F_mm1ax,  run2017F_mu1bk,
+run2017B_el1al,  run2017B_mu1bl,  run2017C_el1bv,  run2017C_mu1bd,  run2017D_mu1am,  run2017E_mm1af,  run2017E_mu1be,  run2017F_el1ay,  run2017F_mm1ay,  run2017F_mu1bl,
+run2017B_el1am,  run2017B_mu1bm,  run2017C_el1bw,  run2017C_mu1be,  run2017D_mu1an,  run2017E_mm1ag,  run2017E_mu1bf,  run2017F_el1az,  run2017F_mm1az,  run2017F_mu1bm,
+run2017B_el1an,  run2017B_mu1bn,  run2017C_mm1aa,  run2017C_mu1bf,  run2017D_mu1ao,  run2017E_mm1ah,  run2017E_mu1bg,  run2017F_el1ba,  run2017F_mm1ba,  run2017F_mu1bn,
+run2017B_el1ao,  run2017C_el1aa,  run2017C_mm1ab,  run2017C_mu1bg,  run2017D_mu1ap,  run2017E_mm1ai,  run2017E_mu1bh,  run2017F_el1bb,  run2017F_mm1bd,  run2017F_mu1bo,
+run2017B_el1ap,  run2017C_el1ab,  run2017C_mm1ac,  run2017C_mu1bh,  run2017D_mu1aq,  run2017E_mm1aj,  run2017E_mu1bi,  run2017F_el1bc,  run2017F_mm1be,  run2017F_mu1bp,
+run2017B_el1aq,  run2017C_el1ac,  run2017C_mm1ad,  run2017C_mu1bi,  run2017D_mu1ar,  run2017E_mm1ak,  run2017E_mu1bj,  run2017F_el1bd,  run2017F_mm1bf,  run2017F_mu1bq,
+run2017B_el1as,  run2017C_el1ad,  run2017C_mm1ae,  run2017C_mu1bj,  run2017D_mu1as,  run2017E_mm1al,  run2017E_mu1bk,  run2017F_el1be,  run2017F_mm1bg,  run2017F_mu1br,
+run2017B_mm1aa,  run2017C_el1ae,  run2017C_mm1af,  run2017C_mu1bk,  run2017D_mu1at,  run2017E_mm1am,  run2017E_mu1bl,  run2017F_el1bf,  run2017F_mu1a,   run2017F_mu1bs,
+run2017B_mm1ab,  run2017C_el1af,  run2017C_mm1ag,  run2017C_mu1bl,  run2017D_mu1au,  run2017E_mm1an,  run2017E_mu1bm,  run2017F_el1bg,  run2017F_mu1aa,  run2017F_mu1bt,
+run2017B_mm1ac,  run2017C_el1ag,  run2017C_mm1ah,  run2017C_mu1bm,  run2017D_mu1av,  run2017E_mm1ao,  run2017E_mu1bn,  run2017F_el1bh,  run2017F_mu1ab,  run2017F_mu1bu,
+run2017B_mm1ad,  run2017C_el1ah,  run2017C_mm1ai,  run2017C_mu1bn,  run2017D_mu1aw,  run2017E_mm1ap,  run2017E_mu1bo,  run2017F_el1bi,  run2017F_mu1ac,  run2017F_mu1bv,
+run2017B_mm1ae,  run2017C_el1ai,  run2017C_mm1aj,  run2017C_mu1bo,  run2017D_mu1ax,  run2017E_mm1aq,  run2017E_mu1bp,  run2017F_el1bj,  run2017F_mu1ad,  run2017F_mu1bw,
+run2017B_mm1ag,  run2017C_el1aj,  run2017C_mm1ak,  run2017C_mu1bt,  run2017D_mu1ay,  run2017E_mm1ar,  run2017E_mu1bq,  run2017F_el1bk,  run2017F_mu1ae,  run2017F_mu1bx,
+run2017B_mu1aa,  run2017C_el1ak,  run2017C_mm1al,  run2017D_el1aa,  run2017E_el1aa,  run2017E_mm1as,  run2017E_mu1br,  run2017F_el1bl,  run2017F_mu1af,  run2017F_mu1by,
+run2017B_mu1ab,  run2017C_el1al,  run2017C_mm1am,  run2017D_el1ab,  run2017E_el1ab,  run2017E_mm1au,  run2017E_mu1bs,  run2017F_el1bm,  run2017F_mu1ag,  run2017F_mu1bz,
+run2017B_mu1ac,  run2017C_el1am,  run2017C_mm1an,  run2017D_el1ac,  run2017E_el1ac,  run2017E_mu1a,   run2017E_mu1bt,  run2017F_el1bn,  run2017F_mu1ah,  run2017F_mu1c,
+run2017B_mu1ad,  run2017C_el1an,  run2017C_mm1ao,  run2017D_el1ad,  run2017E_el1ad,  run2017E_mu1aa,  run2017E_mu1bu,  run2017F_el1bo,  run2017F_mu1ai,  run2017F_mu1d,
+run2017B_mu1ae,  run2017C_el1ao,  run2017C_mu1aa,  run2017D_el1ae,  run2017E_el1ae,  run2017E_mu1ab,  run2017E_mu1bv,  run2017F_el1bp,  run2017F_mu1aj,  run2017F_mu1e,
+run2017B_mu1af,  run2017C_el1ap,  run2017C_mu1ab,  run2017D_el1af,  run2017E_el1af,  run2017E_mu1ac,  run2017E_mu1bw,  run2017F_el1bt,  run2017F_mu1ak,  run2017F_mu1f,
+run2017B_mu1ag,  run2017C_el1aq,  run2017C_mu1ac,  run2017D_el1ag,  run2017E_el1ag,  run2017E_mu1ad,  run2017E_mu1bx,  run2017F_el1bu,  run2017F_mu1al,  run2017F_mu1g,
+run2017B_mu1ah,  run2017C_el1ar,  run2017C_mu1ad,  run2017D_el1ah,  run2017E_el1ah,  run2017E_mu1ae,  run2017E_mu1by,  run2017F_el1bv,  run2017F_mu1am,  run2017F_mu1h,
+run2017B_mu1ai,  run2017C_el1as,  run2017C_mu1ae,  run2017D_el1ai,  run2017E_el1ai,  run2017E_mu1af,  run2017E_mu1bz,  run2017F_el1bw,  run2017F_mu1an,  run2017F_mu1i,
+run2017B_mu1aj,  run2017C_el1at,  run2017C_mu1af,  run2017D_el1aj,  run2017E_el1aj,  run2017E_mu1ag,  run2017F_el1aa,  run2017F_mm1aa,  run2017F_mu1ao,  run2017F_mu1j,
+run2017B_mu1ak,  run2017C_el1au,  run2017C_mu1ag,  run2017D_el1ak,  run2017E_el1ak,  run2017E_mu1ah,  run2017F_el1ab,  run2017F_mm1ab,  run2017F_mu1ap,  run2017F_mu1k,
+run2017B_mu1al,  run2017C_el1av,  run2017C_mu1ah,  run2017D_el1al,  run2017E_el1al,  run2017E_mu1ai,  run2017F_el1ac,  run2017F_mm1ac,  run2017F_mu1aq,  run2017F_mu1l,
+run2017B_mu1am,  run2017C_el1aw,  run2017C_mu1ai,  run2017D_el1am,  run2017E_el1am,  run2017E_mu1aj,  run2017F_el1ad,  run2017F_mm1ad,  run2017F_mu1ar,  run2017F_mu1m,
+run2017B_mu1an,  run2017C_el1ax,  run2017C_mu1aj,  run2017D_el1ao,  run2017E_el1an,  run2017E_mu1ak,  run2017F_el1ae,  run2017F_mm1ae,  run2017F_mu1as,  run2017F_mu1n,
+run2017B_mu1ao,  run2017C_el1ay,  run2017C_mu1ak,  run2017D_mm1aa,  run2017E_el1ao,  run2017E_mu1al,  run2017F_el1af,  run2017F_mm1af,  run2017F_mu1at,  run2017F_mu1o,
+run2017B_mu1ap,  run2017C_el1az,  run2017C_mu1al,  run2017D_mm1ab,  run2017E_el1ap,  run2017E_mu1am,  run2017F_el1ag,  run2017F_mm1ag,  run2017F_mu1au,  run2017F_mu1p,
+run2017B_mu1aq,  run2017C_el1ba,  run2017C_mu1am,  run2017D_mm1ac,  run2017E_el1aq,  run2017E_mu1an,  run2017F_el1ah,  run2017F_mm1ah,  run2017F_mu1av,  run2017F_mu1q,
+run2017B_mu1ar,  run2017C_el1bb,  run2017C_mu1an,  run2017D_mm1ad,  run2017E_el1ar,  run2017E_mu1ao,  run2017F_el1ai,  run2017F_mm1ai,  run2017F_mu1aw,  run2017F_mu1s,
+run2017B_mu1as,  run2017C_el1bc,  run2017C_mu1ao,  run2017D_mm1ae,  run2017E_el1as,  run2017E_mu1ap,  run2017F_el1aj,  run2017F_mm1aj,  run2017F_mu1ax,
+run2017B_mu1at,  run2017C_el1bd,  run2017C_mu1ap,  run2017D_mm1af,  run2017E_el1at,  run2017E_mu1aq,  run2017F_el1ak,  run2017F_mm1ak,  run2017F_mu1ay,
+run2017B_mu1au,  run2017C_el1be,  run2017C_mu1aq,  run2017D_mm1ag,  run2017E_el1au,  run2017E_mu1ar,  run2017F_el1al,  run2017F_mm1al,  run2017F_mu1az,
+run2017B_mu1av,  run2017C_el1bf,  run2017C_mu1ar,  run2017D_mu1aa,  run2017E_el1av,  run2017E_mu1as,  run2017F_el1am,  run2017F_mm1am,  run2017F_mu1b
+
+)

@@ -1,0 +1,11 @@
+executable = run_2016_data.sh
+universe   = vanilla
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(DATASET)
+getenv = True
+output = job_2016_data_$(DATASET).out
+error = job_2016_data_$(DATASET).err
+
+queue DATASET in (run2016B_mumu1,run2016B_mumu2,run2016B_mumu3,run2016B_mumu4,run2016B_mumu5,run2016B_mumu6,run2016B_mumu7,run2016B_mumu8,run2016B_mumu9,run2016B_mumu10,run2016B_mumu11,run2016B_mumu12,run2016B_mu1,run2016B_mu2,run2016B_mu3,run2016B_mu4,run2016B_mu5,run2016B_mu6,run2016B_mu7,run2016B_mu8,run2016B_mu9,run2016B_mu10,run2016B_mu11,run2016B_mu12,run2016B_mu13,run2016B_mu14,run2016B_mu15,run2016C_mumu1,run2016C_mumu2,run2016C_mumu3,run2016C_mu1,run2016C_mu2,run2016C_mu3,run2016C_mu4,run2016C_mu5,run2016C_mu6,run2016D_mumu1,run2016D_mumu2,run2016D_mumu3,run2016D_mu1,run2016D_mu2,run2016D_mu3,run2016D_mu4,run2016D_mu5,run2016D_mu6,run2016D_mu7,run2016D_mu8,run2016D_mu9,run2016D_mu10,run2016D_mu11,run2016D_mu12,run2016D_mu13,run2016E_mumu1,run2016E_mumu2,run2016E_mumu3,run2016E_mumu4,run2016E_mu1,run2016E_mu2,run2016E_mu3,run2016E_mu4,run2016E_mu5,run2016E_mu6,run2016E_mu7,run2016E_mu8,run2016E_mu9,run2016E_mu10,run2016F_mumu1,run2016F_mumu2,run2016F_mumu3,run2016F_mu1,run2016F_mu2,run2016F_mu3,run2016F_mu4,run2016F_mu5,run2016F_mu6,run2016F_mu7,run2016G_mumu1,run2016G_mumu2,run2016G_mumu3,run2016G_mumu4,run2016G_mumu5,run2016G_mumu6,run2016G_mumu7,run2016G_mumu8,run2016G_mu1,run2016G_mu2,run2016G_mu3,run2016G_mu4,run2016G_mu5,run2016G_mu6,run2016G_mu7,run2016G_mu8,run2016G_mu9,run2016G_mu10,run2016G_mu11,run2016G_mu12,run2016G_mu13,run2016G_mu14,run2016H_mumu1,run2016H_mumu2,run2016H_mumu3,run2016H_mumu4,run2016H_mumu5,run2016H_mumu6,run2016H_mu1,run2016H_mu2,run2016H_mu3,run2016H_mu4,run2016H_mu5,run2016H_mu6,run2016H_mu7,run2016H_mu8,run2016H_mu9,run2016H_mu10,run2016H_mu11,run2016H_mu12,run2016H_mu13,run2016H_mu14,run2016H_mu15,run2016H_mu16)

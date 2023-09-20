@@ -1,0 +1,45 @@
+{
+
+	"run2016B_mm1":{
+		"dataset":"/xrootd/store/data/Run2016B_ver2/DoubleMuon/NANOAOD/Nano25Oct2019_ver2-v1/100000/*"
+	},
+	"run2016B_mm2":{
+                "dataset":"/xrootd/store/data/Run2016B_ver2/DoubleMuon/NANOAOD/Nano25Oct2019_ver2-v1/250000/*"
+        },
+	"run2016B_mm3":{
+		"dataset":"/xrootd/store/data/Run2016B_ver2/DoubleMuon/NANOAOD/Nano25Oct2019_ver2-v1/270000/*"
+	},
+	"run2016B_mm4":{
+		"dataset":"/xrootd/store/data/Run2016B_ver2/DoubleMuon/NANOAOD/Nano25Oct2019_ver2-v1/40000/*"
+	},
+
+	"run2016C_mm1":{
+		"dataset":"/xrootd/store/data/Run2016C/DoubleMuon/NANOAOD/Nano25Oct2019-v1/40000/*"
+	},
+
+	"run2016D_mm1":{
+		"dataset":"/xrootd/store/data/Run2016D/DoubleMuon/NANOAOD/Nano25Oct2019-v1/30000/*"
+	},
+
+	"run2016E_mm1":{
+		"dataset":"/xrootd/store/data/Run2016E/DoubleMuon/NANOAOD/Nano25Oct2019-v1/230000/*"
+	},
+
+	"run2016F_mm1":{
+		"dataset":"/xrootd/store/data/Run2016F/DoubleMuon/NANOAOD/Nano25Oct2019-v1/60000/*"
+	},
+
+	"run2016G_mm1":{
+		"dataset":"/xrootd/store/data/Run2016G/DoubleMuon/NANOAOD/Nano25Oct2019-v1/240000/*"
+	},
+
+	"run2016G_mm2":{
+                "dataset":"/xrootd/store/data/Run2016G/DoubleMuon/NANOAOD/Nano25Oct2019-v1/40000/*"
+        },
+
+	"run2016H_mm1":{
+		"dataset":"/xrootd/store/data/Run2016H/DoubleMuon/NANOAOD/Nano25Oct2019-v1/40000/*"
+	}
+
+}
+

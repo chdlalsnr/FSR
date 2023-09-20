@@ -1,0 +1,52 @@
+executable = run_2017.sh
+universe   = vanilla
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+arguments = $(DATASET)
+getenv = True
+output = job_2017_$(DATASET).out
+error = job_2017_$(DATASET).err
+
+queue DATASET in (
+
+dy_0j1aa,  dy_1j8aa,   dy_m508ae,            tt_2l2nu6aa,  tt_semi2aa,  tt_semi8ai,
+dy_0j1ab,  dy_1j8ab,   signal1aa,            tt_2l2nu7aa,  tt_semi2ab,  tt_semi8ak,
+dy_0j1ac,  dy_1j8ac,   signal2aa,            tt_2l2nu7ab,  tt_semi2ac,  wj_1j1aa,
+dy_0j2aa,  dy_1j8ad,   signal3aa,            tt_2l2nu7ac,  tt_semi2ad,  wj_1j2aa,
+dy_0j2ab,  dy_1j8ae,   signal4aa,            tt_2l2nu7ad,  tt_semi2ae,  wj_1j2ab,
+dy_0j2ac,  dy_2j1aa,   signal5aa,            tt_2l2nu7ae,  tt_semi3aa,  wj_1j2ac,
+dy_0j3aa,  dy_2j1ab,   signal6aa,            tt_had1aa,    tt_semi3ab,  wj_1j2ad,
+dy_0j4aa,  dy_2j1ac,   signal7aa,            tt_had1ab,    tt_semi3ac,  wj_1j2ae,
+dy_0j4ab,  dy_2j2aa,   st_schannel_incl1aa,  tt_had1ac,    tt_semi3ad,  wj_1j2ag,
+dy_0j4ac,  dy_2j3aa,   st_schannel_incl2aa,  tt_had1ad,    tt_semi3ae,  wj_2j1aa,
+dy_0j5aa,  dy_2j3ac,   st_schannel_incl2ac,  tt_had1ae,    tt_semi3ag,  wj_2j2aa,
+dy_0j5ab,  dy_2j4aa,   st_tW_antiaa,         tt_had1af,    tt_semi4aa,  wj_3j1aa,
+dy_0j5ac,  dy_2j5aa,   st_tW_antiab,         tt_had1ag,    tt_semi4ab,  wj_3j2aa,
+dy_0j5ad,  dy_2j5ac,   st_tW_antiac,         tt_had1ah,    tt_semi4ac,  wj_3j3aa,
+dy_0j5ae,  dy_2j6aa,   st_tW_topaa,          tt_had1ai,    tt_semi5aa,  wj_3j4aa,
+dy_0j6aa,  dy_2j6ab,   st_tW_topac,          tt_had1aj,    tt_semi5ab,  wj_3j5aa,
+dy_0j6ac,  dy_2j6ac,   st_tchannel_anti1aa,  tt_had1ak,    tt_semi5ac,  wj_3j5ac,
+dy_0j7aa,  dy_2j6ae,   st_tchannel_anti2aa,  tt_had1al,    tt_semi5ad,  wj_3j6aa,
+dy_0j7ab,  dy_2j7aa,   st_tchannel_anti3aa,  tt_had1am,    tt_semi5ae,  wj_4j1aa,
+dy_0j7ac,  dy_2j7ac,   st_tchannel_anti4aa,  tt_had1an,    tt_semi5af,  wj_4j2aa,
+dy_0j8aa,  dy_2j8aa,   st_tchannel_anti5aa,  tt_had1ao,    tt_semi5ag,  wj_4j3aa,
+dy_0j8ac,  dy_2j8ab,   st_tchannel_anti6aa,  tt_had1ap,    tt_semi5ai,  wj_jets1aa,
+dy_1j1aa,  dy_2j8ac,   st_tchannel_anti7aa,  tt_had1aq,    tt_semi6aa,  wj_jets1ab,
+dy_1j1ab,  dy_2j8ad,   st_tchannel_top1aa,   tt_had1ar,    tt_semi6ac,  wj_jets1ac,
+dy_1j1ac,  dy_2j8ae,   st_tchannel_top2aa,   tt_had1as,    tt_semi7aa,  wj_jets1ad,
+dy_1j1ad,  dy_2j8ag,   tt_2l2nu1aa,          tt_had1at,    tt_semi7ab,  wj_jets1ae,
+dy_1j1ae,  dy_m501aa,  tt_2l2nu1ab,          tt_had1au,    tt_semi7ac,  wj_jets2aa,
+dy_1j1af,  dy_m502aa,  tt_2l2nu1ac,          tt_had1av,    tt_semi7ad,  wj_jets3aa,
+dy_1j1ag,  dy_m503aa,  tt_2l2nu1ad,          tt_had1aw,    tt_semi7ae,  wj_jets3ab,
+dy_1j2aa,  dy_m504aa,  tt_2l2nu1ae,          tt_had1ax,    tt_semi7ag,  wj_jets3ac,
+dy_1j3aa,  dy_m504ab,  tt_2l2nu1af,          tt_had1ay,    tt_semi8aa,  wj_jets4aa,
+dy_1j4aa,  dy_m504ac,  tt_2l2nu1ag,          tt_semi1aa,   tt_semi8ab,  wj_jets4ac,
+dy_1j5aa,  dy_m505aa,  tt_2l2nu1ai,          tt_semi1ab,   tt_semi8ac,  wj_jets5aa,
+dy_1j5ac,  dy_m506aa,  tt_2l2nu2aa,          tt_semi1ac,   tt_semi8ad,
+dy_1j6aa,  dy_m507aa,  tt_2l2nu2ac,          tt_semi1ad,   tt_semi8ae,
+dy_1j6ac,  dy_m508aa,  tt_2l2nu3aa,          tt_semi1ae,   tt_semi8af,
+dy_1j7aa,  dy_m508ab,  tt_2l2nu4aa,          tt_semi1af,   tt_semi8ag,
+dy_1j7ac,  dy_m508ac,  tt_2l2nu5aa,          tt_semi1ag,   tt_semi8ah
+
+)
